@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: tomato;
+  width: 100vw;
+  height: 20vh;
+}
+
+.title {
+  padding: 20px;
+}
