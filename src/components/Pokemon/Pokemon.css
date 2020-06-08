@@ -1,0 +1,36 @@
+.pokemon-container {
+  /* position: absolute; */
+  /* border: black solid 5px; */
+}
+
+.pokemon {
+  position: absolute;
+  margin-top: -380px;
+  margin-left: -300px;
+}
+
+.pokemon-name {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: -240px;
+}
+
+.previous-button {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -330px;
+  background-color: red;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+}
+
+.next-button {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -180px;
+  background-color: red;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+}

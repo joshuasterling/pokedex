@@ -1,11 +1,12 @@
 .header {
   display: flex;
   justify-content: center;
-  background-color: tomato;
+  background-color: red;
   width: 100vw;
-  height: 20vh;
+  height: 21vh;
+  border-bottom: solid 10px darkslateblue;
 }
 
 .title {
-  padding: 20px;
+  padding: 16px;
 }
