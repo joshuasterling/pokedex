@@ -11,7 +11,7 @@ function App() {
   const [currentPageUrl, setCurrentPageUrl] = useState(
     "https://pokeapi.co/api/v2/pokemon/"
   );
-  const [counter, setCounter] = useState(3);
+  const [counter, setCounter] = useState(Math.floor(Math.random() * 151) + 1);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
