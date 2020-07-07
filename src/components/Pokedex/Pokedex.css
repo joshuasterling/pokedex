@@ -1,3 +1,11 @@
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
 .pokedex-container {
   position: absolute;
   width: 300px;
@@ -5,4 +13,16 @@
   margin-top: 387px;
   right: 595px;
   padding: 20px;
+}
+
+.stats-box {
+  height: 370px;
+  width: 295px;
+  background-color: crimson;
+  margin-top: -360px;
+  margin-left: -18px;
+}
+
+.abilities-button {
+  background-color: cyan;
 }
