@@ -1,9 +1,16 @@
+h2 {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .pokedex-container {
@@ -24,5 +31,7 @@ li {
 }
 
 .abilities-button {
-  background-color: cyan;
+  position: fixed;
+  right: 610px;
+  top: 720px;
 }

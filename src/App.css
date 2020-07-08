@@ -4,16 +4,32 @@
   box-sizing: border-box;
 }
 
+.sliding-background {
+  background: url("/public/wallpaper.jpg") repeat-x;
+  /* height: 100%; */
+  width: 95%;
+  animation: slide 60s linear infinite;
+  z-index: -10;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: darkslateblue; */
 }
 
 .pokedex {
   margin-top: 30px;
   width: 800px;
-  z-index: -1;
+  z-index: -1000;
   position: sticky;
 }

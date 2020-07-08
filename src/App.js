@@ -44,6 +44,11 @@ function App() {
   return (
     <div className="app-container">
       <Header />
+      <img
+        className="sliding-background"
+        src={"/wallpaper.jpg"}
+        alt="background image"
+      />
       <img className="pokedex" src={"/pokedex.jpg"} alt="pokedex" />
       <Pokemon
         pokemon={pokemon}

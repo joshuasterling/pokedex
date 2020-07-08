@@ -13,35 +13,39 @@ export default function Pokemon({
 
   return (
     <div className="pokemon-container">
+      <div className="pokemon-name">
+        <h1>{pokemonName}</h1>
+      </div>
       <img
         className="pokemon"
         style={{ width: "200px", height: "200px" }}
         src={pokemon.sprites ? pokemon.sprites.front_default : null}
         alt="pokemon"
       />
-      <div className="pokemon-name">{pokemonName}</div>
 
-      {counter >= 2 && (
-        <button
-          className="previous-button"
-          onClick={() => {
-            goToPrevPokemon();
-          }}
-        >
-          PREVIOUS
-        </button>
-      )}
+      <div className="button-container">
+        {counter >= 2 && (
+          <button
+            className="button"
+            onClick={() => {
+              goToPrevPokemon();
+            }}
+          >
+            PREVIOUS
+          </button>
+        )}
 
-      {counter <= 150 && (
-        <button
-          className="next-button"
-          onClick={() => {
-            goToNextPokemon();
-          }}
-        >
-          NEXT
-        </button>
-      )}
+        {counter <= 150 && (
+          <button
+            className="button"
+            onClick={() => {
+              goToNextPokemon();
+            }}
+          >
+            NEXT
+          </button>
+        )}
+      </div>
     </div>
   );
 }

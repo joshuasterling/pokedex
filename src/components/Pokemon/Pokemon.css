@@ -1,34 +1,30 @@
 .pokemon-container {
-  /* position: absolute; */
-  /* border: black solid 5px; */
+  height: 337px;
+  width: 330px;
+  margin-top: -447px;
+  margin-left: -410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pokemon {
-  position: absolute;
-  margin-top: -380px;
-  margin-left: -300px;
 }
 
 .pokemon-name {
-  position: absolute;
-  margin-top: -400px;
-  margin-left: -250px;
+  display: flex;
+  justify-self: center;
 }
 
-.previous-button {
-  position: absolute;
-  margin-top: -150px;
-  margin-left: -330px;
-  background-color: red;
-  text-align: center;
-  width: 100px;
-  height: 30px;
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 30px;
 }
 
-.next-button {
-  position: absolute;
-  margin-top: -150px;
-  margin-left: -180px;
+.button {
   background-color: red;
   text-align: center;
   width: 100px;

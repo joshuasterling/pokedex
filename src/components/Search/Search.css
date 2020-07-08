@@ -1,5 +1,10 @@
+input {
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+
 .search-container {
-  margin-top: 30px;
+  margin-top: 130px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -11,5 +16,5 @@
   border: 3px solid black;
   border-radius: 5px;
   height: 50px;
-  width: 750px;
+  width: 795px;
 }
