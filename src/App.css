@@ -5,19 +5,42 @@
 }
 
 .sliding-background {
-  background: url("/public/wallpaper.jpg") repeat-x;
-  /* height: 100%; */
-  width: 95%;
-  animation: slide 60s linear infinite;
-  z-index: -10;
+  background: url("/public/wallpaper.jpg");
+  position: absolute;
+  /* padding-top: 150px; */
+  margin-top: 203px;
+  height: 78%;
+  width: 200%;
+  -webkit-animation: slideshow 100s linear infinite;
+  animation: slideshow 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: -101;
 }
-
-@keyframes slide {
+@-webkit-keyframes slideshow {
   0% {
-    transform: translate3d(0, 0, 0);
+    left: 0;
   }
   100% {
-    transform: translate3d(-1692px, 0, 0);
+    left: -200%;
+  }
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+@-webkit-keyframes moveSlideshow {
+  100% {
+    -webkit-transform: translateX(-200%);
+  }
+}
+@keyframes moveSlideshow {
+  100% {
+    -webkit-transform: translateX(-200%);
   }
 }
 
@@ -30,6 +53,6 @@
 .pokedex {
   margin-top: 30px;
   width: 800px;
-  z-index: -1000;
+  z-index: -100;
   position: sticky;
 }
